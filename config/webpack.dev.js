@@ -113,6 +113,9 @@ module.exports = {
     resolve:{
         // 自动补全的文件扩展名
         extensions: [".vue",".js",".json"],
+        alias: {
+            "@": path.resolve(__dirname,"../src")
+        }
     },
     devServer: {
         host: "localhost",
